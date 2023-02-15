@@ -1,0 +1,124 @@
+books.db : The term 'books.db' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was  
+included, verify that the path is correct and try again.
+At line:1 char:23
++ get-content books.sql|books.db
++                       ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (books.db:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: The command books.db was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location 
+by default. If you trust this command, instead type: ".\books.db". See "get-help about_Command_Precedence" for more details.
+books.db : The term 'books.db' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was  
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | books.db
++                         ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (books.db:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Suggestion [3,General]: The command books.db was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location 
+by default. If you trust this command, instead type: ".\books.db". See "get-help about_Command_Precedence" for more details.
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqlite3 books.db
+sqlite3 : The term 'sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was    
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqlite3 books.db
++                         ~~~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqllite3 books.db
+sqllite3 : The term 'sqllite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was  
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqllite3 books.db
++                         ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (sqllite3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqlite3 books.db
+sqlite3 : The term 'sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqlite3 books.db
++                         ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (sqlite3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqlite3 books.db
+sqlite3 : The term 'sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was 
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqlite3 books.db
++                         ~~~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> import sqlite
+import : The term 'import' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was      
+included, verify that the path is correct and try again.
+At line:1 char:1
++ import sqlite
++ ~~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> import sqlite3
+import : The term 'import' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was      
+included, verify that the path is correct and try again.
+At line:1 char:1
++ import sqlite3
++ ~~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqlite3 books.db
+sqlite3 : The term 'sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was    
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqlite3 books.db
++                         ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (sqlite3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+books.db : The term 'books.db' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was  
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | books.db
++                         ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (books.db:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+Suggestion [3,General]: The command books.db was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location 
+by default. If you trust this command, instead type: ".\books.db". See "get-help about_Command_Precedence" for more details.
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | ".\books.db"
+At line:1 char:25
++ get-content books.sql | ".\books.db"
++                         ~~~~~~~~~~~~
+Expressions are only allowed as the first element of a pipeline.
+    + FullyQualifiedErrorId : ExpressionsMustBeFirstInPipeline
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | sqlite3 ".\books.db"
+sqlite3 : The term 'sqlite3' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was    
+included, verify that the path is correct and try again.
+At line:1 char:25
++ get-content books.sql | sqlite3 ".\books.db"
++                         ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (sqlite3:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+books.sql : The term 'books.sql' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path    
+was included, verify that the path is correct and try again.
+At line:1 char:28
++ get-content ".\books.db" | books.sql
++                            ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (books.sql:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: The command books.sql was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\books.sql". See "get-help about_Command_Precedence" for more details.
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest> get-content books.sql | ".\books.db"
+At line:1 char:25
++ get-content books.sql | ".\books.db"
++                         ~~~~~~~~~~~~
+Expressions are only allowed as the first element of a pipeline.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpressionsMustBeFirstInPipeline
+ 
+PS G:\My Drive\Grad School\44608_Data_Analytics_Fundamentals\Module 5\datafun-05-data-at-rest>
